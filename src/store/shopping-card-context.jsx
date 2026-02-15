@@ -73,6 +73,12 @@ export default function CartContextProvider({children}) {
   
 
   function handleAddItemToCart(id) {
+    
+    const confirmAdd = window.confirm('Add this product to cart?');
+    if(!confirmAdd) {
+      return;
+    }
+
     shopingCartDispatch({
       type: 'ADD-ITEM',
       payload: id,
