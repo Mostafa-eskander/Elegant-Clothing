@@ -288,6 +288,6 @@ h1 {
   }
   #products {
     grid-template-columns: repeat(auto-fit, minmax(min(15rem, 100%), 1fr));
-    gap: 0rem;
+    gap: 2rem;
   }
 }
