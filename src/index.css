@@ -290,4 +290,12 @@ h1 {
     grid-template-columns: repeat(auto-fit, minmax(min(15rem, 100%), 1fr));
     gap: 2rem;
   }
+  #modal {
+    width: 50%;
+  }
+}
+@media (max-width: 500px) {
+  #modal {
+    width: 90%;
+  } 
 }
